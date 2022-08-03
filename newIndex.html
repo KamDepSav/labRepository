@@ -1,12 +1,18 @@
 <html>
     <head>
         <title>Registration</title>
-        <script>  </script>
+        <script type = "text/javascript">
+            function register(){
+                var Name = document.getElementById("name").value;
+                var Surname = document.getElementById("surname").value;
+                alert("Successfully registered user: " + Name + " " + Surname);
+            }
+        </script>
     </head>
     <body>
         <h1>Register new account!</h1>
         <input type="text" id="name"/><br/>
         <input type="text" id="surname"/><br/>
-        <button type="button">Register!</button>
+        <button type="button" onclick = register()>Register!</button>
     </body>
 </html>
